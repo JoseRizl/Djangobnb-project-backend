@@ -11,6 +11,7 @@ then
     echo "The database is up and running xD"
 fi
 
+python manage.py makemigrations
 python manage.py migrate
 
 exec "$@"
